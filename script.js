@@ -17,10 +17,10 @@ backToTopButton.addEventListener('click', () => {
 });
 
 
-emailjs.init("5tScuY8XLrEO-I1aI"); // Replace with your EmailJS user ID
+emailjs.init("5tScuY8XLrEO-I1aI"); 
 
 document.getElementById("contactForm").addEventListener("submit", function (event) {
-  event.preventDefault(); // Prevent default form submission
+  event.preventDefault(); 
 
   emailjs.send("service_be257t1", "template_6g543ly", {
     first_name: document.getElementById("first-name").value,
@@ -30,7 +30,7 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     message: document.getElementById("message").value
   }).then(function (response) {
     alert("Your message has been sent successfully!");
-    document.getElementById("contactForm").reset(); // Reset the form
+    document.getElementById("contactForm").reset();
   }, function (error) {
     alert("Error sending message. Please try again.");
   });
