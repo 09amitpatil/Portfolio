@@ -1,4 +1,4 @@
-
+// Back to top button
 const backToTopButton = document.getElementById('backToTop');
 
 window.addEventListener('scroll', () => {
@@ -16,11 +16,11 @@ backToTopButton.addEventListener('click', () => {
   });
 });
 
-
-emailjs.init("5tScuY8XLrEO-I1aI"); 
+// Email JS API for contact form submission 
+emailjs.init("5tScuY8XLrEO-I1aI");
 
 document.getElementById("contactForm").addEventListener("submit", function (event) {
-  event.preventDefault(); 
+  event.preventDefault();
 
   emailjs.send("service_be257t1", "template_6g543ly", {
     first_name: document.getElementById("first-name").value,
