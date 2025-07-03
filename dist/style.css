@@ -537,8 +537,6 @@ embed,
 object {
   display: block;
   /* 1 */
-  vertical-align: middle;
-  /* 2 */
 }
 
 /*
@@ -1577,11 +1575,11 @@ html {
 }
 
 #backToTop {
-  display: none; 
+  display: none;
   position: fixed;
   bottom: 20px;
-  right: 20px; 
-  z-index: 1000; 
+  right: 20px;
+  z-index: 1000;
   background-color: #4f46e5;
   color: white;
   padding: 10px 20px;
@@ -1592,7 +1590,7 @@ html {
 }
 
 #backToTop:hover {
-  background-color: #4338ca; 
+  background-color: #4338ca;
   transform: scale(1.1);
 }
 
