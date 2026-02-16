@@ -5,7 +5,16 @@ module.exports = {
     "./*.{html,js}" // Include root-level HTML or JS files
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        heading: ['Outfit', 'sans-serif'],
+      },
+      colors: {
+        primary: '#4f46e5',
+        secondary: '#6b21a8',
+      }
+    },
   },
   plugins: [],
 };
